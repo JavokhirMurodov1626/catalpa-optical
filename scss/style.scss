@@ -53,13 +53,13 @@ p {
 // }
 
 //Buttons end
-.left-rounded-img{
-  border-radius: 100px 0px
+.left-rounded-img {
+  border-radius: 100px 0px;
 }
-.right-rounded-img{
+.right-rounded-img {
   border-radius: 0 100px;
 }
-.bottom-left-rounded-img{
+.bottom-left-rounded-img {
   border-radius: 0px 0px 0px 200px;
 }
 .container {
@@ -139,7 +139,6 @@ p {
 }
 
 .section-top {
-  background-color: aquamarine;
   .container {
     height: 100%;
     .row {
@@ -602,7 +601,7 @@ p {
 }
 
 // about.html
-.section-top.about{
+.section-top.about {
   height: 610px;
 }
 .section-about {
@@ -621,55 +620,53 @@ p {
   }
 }
 
-.section-middle{
-  h2{
+.section-middle {
+  h2 {
     margin-bottom: 50px;
     margin-top: 0;
   }
-  .col-sm-7{
+  .col-sm-7 {
     display: flex;
     align-items: center;
-    padding-left: 60px!important;
+    padding-left: 60px !important;
   }
-  .section-parag{
+  .section-parag {
     margin: 0;
   }
 }
 
-.section-middle-reverse{
-  h2{
+.section-middle-reverse {
+  h2 {
     margin-top: 0;
     margin-bottom: 50px;
   }
-  .section-parag{
+  .section-parag {
     margin: 0;
   }
-  .col-sm-7{
+  .col-sm-7 {
     display: flex;
     align-items: center;
     padding-right: 60px;
   }
 }
-.about-swiper{
-  .swiper{
+.about-swiper {
+  .swiper {
     padding-bottom: 90px;
   }
-  h2{
+  h2 {
     margin-bottom: 60px;
   }
 }
-.about-map{
+.about-map {
   margin-top: 145px;
 }
 
 //adult
 
-
-
 .section-adult1 {
-  .section-text{
+  .section-text {
     padding: 90px 54px 38px 90px;
-    .section-title{
+    .section-title {
       margin-bottom: 30px;
     }
   }
@@ -694,7 +691,7 @@ p {
 }
 
 .section-adult {
-  .section-text{
+  .section-text {
     padding: 90px 54px 10px 90px;
   }
   .section-parag {
@@ -705,99 +702,107 @@ p {
     line-height: 40px;
   }
 }
-.section-text.adult-page{
-  h2{
+.section-text.adult-page {
+  h2 {
     margin-bottom: 30px;
   }
-  p{
+  p {
     margin: 0;
     margin-bottom: 50px;
   }
-  .section-buttons{
+  .section-buttons {
     margin-bottom: 0;
   }
 }
 
-
 //testimonials
-
-.section-test {
-  .test_item1,
-  .test_item2,
-  .test_item3 {
-    border: 1px solid black;
-    margin-right: 20px;
+.section-testimonials {
+  h2 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 71px;
     margin-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    display: inline-block;
+  }
+  .test {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .review-box {
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 30px;
+    }
+  }
+}
+.swiper-slide {
+  .swiper-slide__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .swiper-slide__rating {
+    max-width: 96px;
+    margin-bottom: 10px;
+  }
+  .slide-bottom {
+    display: flex;
+    justify-content: space-between;
+    .slide-bottom__text {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    .swiper-bottom__icon {
+      max-width: 75px;
+      height: 25px;
+    }
   }
 }
 
 //container-contact
-
 .container-contact {
-  .contact-text {
-    font-family: "Rubik";
-    font-style: normal;
+  margin-bottom: 100px;
+  h2 {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 71px;
     margin-bottom: 50px;
   }
-  .phone_block {
-    .contact_phone-img {
-      margin-bottom: 20px;
-    }
-    .contact_block-phone {
-      display: inline-block;
-      max-width: auto;
-      margin-left: 30px;
-      padding-top: 20px;
-      .contact_block-p {
-        margin-bottom: 0px;
-        .span_text {
-          color: #024547;
-        }
-      }
-    }
+}
+.contact-box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  img {
+    height: 51px;
+    width: 51px;
   }
-  .fax_block {
-    .contact_fax-img {
-      margin-bottom: 20px;
-    }
-    .contact_block-fax {
-      display: inline-block;
-      max-width: auto;
-      margin-left: 30px;
-      padding-top: 20px;
-      .contact_block-p {
-        margin-bottom: 0px;
-        .span_text {
-          color: #024547;
-        }
-      }
-    }
+  p {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 0.452153px;
+    color: #024547;
   }
-  .adress_block {
-    .contact_adress-img {
-      margin-bottom: 20px;
-    }
-    .contact_block-adress {
-      display: inline-block;
-      max-width: auto;
-      margin-left: 30px;
-      padding-top: 20px;
-      .contact_block-p {
-        margin-bottom: 0px;
-        .span_text {
-          color: #024547;
-        }
-      }
-    }
+  h6 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
   }
 }
+
 
 @media (max-width: 576px) {
   .container_nav {
