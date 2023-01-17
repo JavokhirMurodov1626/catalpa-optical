@@ -34,6 +34,18 @@ p {
   font-size: 20px;
 }
 
+.left-rounded-img {
+  border-radius: 100px 0px;
+}
+
+.right-rounded-img {
+  border-radius: 0 100px;
+}
+
+.bottom-left-rounded-img {
+  border-radius: 0px 0px 0px 200px;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -587,17 +599,12 @@ p {
   margin-top: 145px;
 }
 
-.container-two .section-parag {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 40px;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 60px;
+.section-adult1 .section-text {
+  padding: 90px 54px 38px 90px;
 }
-
+.section-adult1 .section-text .section-title {
+  margin-bottom: 30px;
+}
 .section-adult1 .section-parag {
   font-family: "Roboto";
   font-style: normal;
@@ -615,12 +622,26 @@ p {
   line-height: 40px;
 }
 
+.section-adult .section-text {
+  padding: 90px 54px 10px 90px;
+}
 .section-adult .section-parag {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
   line-height: 40px;
+}
+
+.section-text.adult-page h2 {
+  margin-bottom: 30px;
+}
+.section-text.adult-page p {
+  margin: 0;
+  margin-bottom: 50px;
+}
+.section-text.adult-page .section-buttons {
+  margin-bottom: 0;
 }
 
 .section-test .test_item1,
