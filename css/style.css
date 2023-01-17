@@ -123,8 +123,8 @@ p {
 }
 
 .page-title {
-  margin-bottom: 20px;
-  margin-top: 265px;
+  margin-bottom: 24px;
+  margin-top: 276px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 600;
@@ -136,24 +136,34 @@ p {
 }
 
 .section-top .section-top-description {
+  margin-bottom: 24px;
   line-height: 39px;
 }
+.section-top .section-top-lng {
+  background-color: orange;
+  display: flex;
+}
 .section-top .section-top-lng .section-top-lng-title {
-  display: inline-block;
-  margin-right: 13.57px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-right: 14px;
+  background-color: aqua;
 }
 .section-top .section-top-lng .section-top-lng-item {
-  display: inline-block;
-  margin-right: 10px;
+  display: flex;
+  background-color: #024547;
+  margin-right: 19.7px;
+  align-items: center;
 }
 .section-top .section-top-lng .section-top-lng-item img {
-  margin-bottom: 8px;
+  width: 23px;
+  height: 23px;
+  margin-right: 5.57px;
 }
 .section-top .section-top-lng .section-top-lng-item .icon-text {
-  display: inline-block;
   font-weight: 600;
+  margin-bottom: 0;
 }
 .section-top .section-buttons {
   margin-bottom: 80px;
