@@ -102,6 +102,20 @@ p {
   max-width: 600px;
 }
 
+.section-top {
+  background-color: aquamarine;
+}
+.section-top .container {
+  height: 100%;
+}
+.section-top .container .row {
+  height: 100%;
+}
+.section-top .col-sm-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .section-top .section-top-description {
   margin-bottom: 24px;
   line-height: 39px;
@@ -158,6 +172,41 @@ p {
   position: absolute;
   right: 0;
   max-height: 850px;
+  padding: 0;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.breadcrumb .breadcrumb-item {
+  display: flex;
+  align-self: flex-end;
+}
+.breadcrumb .breadcrumb-item a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 126.9%;
+  letter-spacing: 0.02em;
+  color: #8c8c8c;
+}
+.breadcrumb .breadcrumb-item.active {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 126.9%;
+  letter-spacing: 0.02em;
+  color: #1d293f;
+  display: flex;
+  align-self: flex-end;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "";
+  background-image: url("/icons/divide.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section-img-left .col-sm-7 {
@@ -170,7 +219,6 @@ p {
   font-weight: 600;
   font-size: 50px;
   line-height: 65px;
-  margin-top: 50px;
 }
 
 .section-parag {
@@ -425,6 +473,13 @@ p {
   font-size: 16px;
   line-height: 28px;
 }
+.footer .footer-links .links-wrap {
+  display: flex;
+  gap: 50px;
+}
+.footer .footer-links .links-wrap ul {
+  display: block;
+}
 .footer .footer_block .footer_block-text {
   font-size: 14px;
   font-weight: 400;
@@ -451,7 +506,6 @@ p {
   margin-bottom: 10px;
 }
 .footer .footer_block .footer-list li a {
-  text-decoration: none;
   color: #024547;
   font-size: 14px;
 }
@@ -472,54 +526,65 @@ p {
 .footer .footer_block-text-logo .text-yellow {
   color: #bca667;
 }
-.footer .footer_block-points {
-  margin-left: -70px;
+.footer .footer-logo {
+  padding-right: 114px !important;
 }
-
-.section-about {
-  position: relative;
-}
-.section-about .about-section-bg {
-  position: absolute;
-  right: 0;
-  max-height: 850px;
-}
-.section-about .aboutpage .about_block1-left .page-title {
-  margin-top: 226px;
-  margin-bottom: 60px;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 71px;
-  letter-spacing: -1.7px;
-  color: #000;
-  max-width: 600px;
-}
-.section-about .aboutpage .about_arow {
-  margin-left: 10px;
-  margin-top: 40px;
-}
-.section-about .aboutpage .about_arow .arow_text {
-  color: #8c8c8c;
-}
-
-.section-about1 .section-parag {
-  font-family: "Roboto";
-  font-style: normal;
+.footer .footer-logo p {
   font-weight: 400;
-  font-size: 25px;
-  line-height: 40px;
-  margin-left: 40px;
-  margin-top: 100px;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.section-about .section-text {
-  margin-top: 30px;
+.section-top.about {
+  height: 610px;
 }
-.section-about .section-text .section-about-lng-item {
-  display: inline-block;
-  margin-right: 27px;
+
+.section-about .col {
+  padding: 90px;
+}
+.section-about .section-title {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+.section-about .section-about-lng {
+  display: flex;
+  gap: 26px;
+}
+.section-middle h2 {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.section-middle .col-sm-7 {
+  display: flex;
+  align-items: center;
+  padding-left: 60px !important;
+}
+.section-middle .section-parag {
+  margin: 0;
+}
+
+.section-middle-reverse h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.section-middle-reverse .section-parag {
+  margin: 0;
+}
+.section-middle-reverse .col-sm-7 {
+  display: flex;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.about-swiper .swiper {
+  padding-bottom: 90px;
+}
+.about-swiper h2 {
+  margin-bottom: 60px;
+}
+
+.about-map {
+  margin-top: 145px;
 }
 
 .container-two .section-parag {
