@@ -34,35 +34,6 @@ p {
   font-size: 20px;
 }
 
-.btn {
-  width: 200px;
-  height: 65px;
-  margin: 20px 15px 0 0;
-}
-
-.btn-light {
-  border: 1px solid #024547;
-  color: #024547;
-  background-color: transparent;
-}
-.btn-light:hover {
-  background-color: #024547;
-  color: white;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 20px 13px rgba(0, 0, 0, 0.035), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
-}
-
-.btn-dark {
-  background-color: #024547;
-  color: white;
-  background-color: #024547;
-}
-.btn-dark:hover {
-  background-color: transparent;
-  color: #024547;
-  border: 1px solid #024547;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 20px 13px rgba(0, 0, 0, 0.035), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
-}
-
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -142,6 +113,7 @@ p {
 .section-top .section-top-lng {
   background-color: orange;
   display: flex;
+  margin-bottom: 43px;
 }
 .section-top .section-top-lng .section-top-lng-title {
   font-size: 20px;
@@ -168,14 +140,38 @@ p {
 .section-top .section-buttons {
   margin-bottom: 80px;
 }
+.section-top .section-buttons button {
+  margin-right: 20px;
+  padding: 22px 58px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.52px;
+  border: 1px solid #024547;
+  color: #024547;
+  background: transparent;
+}
+.section-top .section-buttons button:hover {
+  color: #fff;
+  background-color: #024547;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 20px 13px rgba(0, 0, 0, 0.035), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
+}
 .section-top .home_block1-points {
-  margin-top: 30px;
+  max-width: 210px;
 }
 
 .top-section-bg {
   position: absolute;
   right: 0;
   max-height: 850px;
+}
+
+.section-img-left {
+  background-color: orange;
+}
+.section-img-left .col-sm-7 {
+  background-color: aquamarine;
+  padding-left: 57px !important;
 }
 
 .section-title {
@@ -194,7 +190,7 @@ p {
 }
 
 .container-dark-bg {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border-radius: 1px 100px;
 }
 
@@ -274,7 +270,7 @@ p {
 .owl-carousel .owl-item .owl_1-item {
   padding: 20px;
   margin-right: 20px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   border-radius: 10px;
 }
 
@@ -290,7 +286,7 @@ p {
   margin-bottom: 60px;
 }
 .section-features .section-features-item {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border-radius: 60px 1px;
   text-align: center;
   height: 310px;
@@ -304,7 +300,7 @@ p {
 }
 
 .home_block8 .home_block8-contact .home_fix-block {
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   border-radius: 100px;
   margin: 0 auto;
   background-color: white;
@@ -351,11 +347,13 @@ p {
   font-weight: 400;
   line-height: 16.41px;
 }
-.footer .footer_block p, .footer .footer_block a {
+.footer .footer_block p,
+.footer .footer_block a {
   font-family: "Roboto";
   font-weight: 400;
 }
-.footer .footer_block p li, .footer .footer_block a li {
+.footer .footer_block p li,
+.footer .footer_block a li {
   list-style-type: none;
 }
 .footer .footer_block .address-shift {
@@ -389,7 +387,7 @@ p {
   margin-top: 9px;
 }
 .footer .footer_block-text-logo .text-yellow {
-  color: #BCA667;
+  color: #bca667;
 }
 .footer .footer_block-points {
   margin-left: -70px;
@@ -420,7 +418,7 @@ p {
   margin-top: 40px;
 }
 .section-about .aboutpage .about_arow .arow_text {
-  color: #8C8C8C;
+  color: #8c8c8c;
 }
 
 .section-about1 .section-parag {
@@ -477,7 +475,9 @@ p {
   line-height: 40px;
 }
 
-.section-test .test_item1, .section-test .test_item2, .section-test .test_item3 {
+.section-test .test_item1,
+.section-test .test_item2,
+.section-test .test_item3 {
   border: 1px solid black;
   margin-right: 20px;
   margin-bottom: 20px;
