@@ -159,33 +159,33 @@ p {
       }
     }
   }
-  .section-buttons {
-    margin-bottom: 80px;
-    button {
-      margin-right: 20px;
-      padding: 22px 58px;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 21px;
-      letter-spacing: 0.52px;
-      border: 1px solid #024547;
-      color: #024547;
-      background: transparent;
-      &:hover {
-        color: #fff;
-        background-color: #024547;
-        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
-          0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481),
-          0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185),
-          0px 20px 13px rgba(0, 0, 0, 0.035),
-          0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815),
-          0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
-      }
-    }
-  }
 
   .home_block1-points {
     max-width: 210px;
+  }
+}
+.section-buttons {
+  margin-bottom: 80px;
+  button {
+    margin-right: 20px;
+    padding: 22px 58px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.52px;
+    border: 1px solid #024547;
+    color: #024547;
+    background: transparent;
+    &:hover {
+      color: #fff;
+      background-color: #024547;
+      box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0531481),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0425185),
+        0px 20px 13px rgba(0, 0, 0, 0.035),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0274815),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.0168519);
+    }
   }
 }
 
@@ -356,10 +356,9 @@ p {
           font-size: 18px;
           line-height: 21px;
         }
-        .swiper-bottom__icon{
+        .swiper-bottom__icon {
           max-width: 75px;
           height: 25px;
-         
         }
       }
       &.swiper-slide-active {
@@ -379,15 +378,21 @@ p {
 
 .section-features {
   .section-title {
+    margin-top: 0;
     margin-bottom: 60px;
   }
   .section-features-item {
     background-color: #f3f3f3;
     border-radius: 60px 1px;
-    text-align: center;
-    height: 310px;
-    width: 310px;
-    padding: 48px 30px 0 30px;
+    display: flex;
+    height: 340px;
+    padding: 48px 42px 0 42px;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 70px;
+      height: 70px;
+    }
     .section-features-item-text {
       margin-top: 40px;
       font-weight: 600;
@@ -395,29 +400,64 @@ p {
     }
   }
 }
+.call-to-action-section {
+  padding: 88px 90px;
+  margin-bottom: 145px;
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-size: 55px;
+  }
+  .section-parag {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
+}
 
 .home_block8 {
+  position:relative;
+  
+
   .home_block8-contact {
     .home_fix-block {
+      position: absolute;
+      left: -50%;
+      right: -50%;
+      transform: translateY(-50%);
+      width: 100%;
       border: 1px solid #ebebeb;
       border-radius: 100px;
       margin: 0 auto;
       background-color: #ffff;
-      margin-bottom: -60px;
-      .col-sm-4 {
+      padding: 45px 56px;
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+      .col-sm-3 {
         padding: 0;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        .home_block8-icon1 {
-          padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        .home_block8-p {
+          margin-bottom: 0;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.35px;
         }
-        .home_block8-phone {
-          display: inline-block;
-          padding-top: 30px;
-          padding-left: 20px;
-          .home_block8-p {
-            margin-bottom: 0px;
-          }
+        h6 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          margin-right: 17px;
         }
       }
     }
