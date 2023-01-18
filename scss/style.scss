@@ -35,11 +35,7 @@ p {
   font-weight: 400;
   font-size: 20px;
 }
-.max-width {
-  max-width: 1920px !important;
-  width: 100%;
-  margin: 0 auto;
-}
+
 //Buttons
 // .btn-dark {
 //   background-color: #024547;
@@ -278,6 +274,11 @@ p {
   .col-sm-7 {
     padding-left: 57px !important;
   }
+  .section-reverse{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+  }
 }
 .add-section {
   .section-img {
@@ -513,9 +514,11 @@ p {
 }
 
 .home_block8 {
+  width: 100%;
   position: relative;
-
+  margin-bottom: 160px;
   .home_block8-contact {
+    width: 100%;
     .home_fix-block {
       position: absolute;
       left: -50%;
@@ -559,14 +562,25 @@ p {
   }
 }
 
+
+
 .footer {
+  margin: 0;
   position: relative;
-  .footer-img-bg {
+  .footer-bottom{
+    display: none;
+  }
+  .footer-img-wrapper {
+    max-width: 656px;
+    width: 100%;
     position: absolute;
     left: 0;
-    bottom: -20px;
-    max-width: 656px;
-    padding-left: 0px;
+    bottom: 0;
+    img{
+      // height: 100%;
+      padding-left: 0;
+      object-fit: cover;
+    }
   }
   margin-bottom: 20px;
   .footer_block-h {
@@ -1035,7 +1049,7 @@ p {
       justify-content: center;
       align-items: center;
       img {
-        border-radius: 0;
+        border-radius: 80px 0;
       }
     }
     .section-reverse {
@@ -1195,11 +1209,139 @@ p {
 
 @media screen and (min-width: 320px) and (max-width: 1024px){
   .call-to-action-section{
-    background-color: aquamarine;
+    margin: 0;
+    margin-bottom: 160px;
+    padding: 40px;
+    padding-left: 60px;
       .section-wrapper{
-        
+        .section-title{
+          font-size: 35px;
+          line-height: 45px;
+          margin-bottom: 20px
+        }
+        .section-parag{
+          margin: 0;
+          margin-bottom: 25px;
+        }
+        .section-buttons{
+          margin-bottom: 20px;
+        }
       }
   }
+}
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .call-to-action-section{
+    padding: 16px;
+    .section-bg-img{
+      padding: 0;
+      width: 100%;
+    }
+      .section-wrapper{
+        padding: 16px!important;
+        .section-title{
+         
+          margin-bottom: 10px
+        }
+        .section-parag{
+          margin: 0;
+          margin-bottom: 25px;
+        }
+        .section-buttons{
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          button{
+            margin-right: 0;
+            padding: 10px 20px;
+            font-size: 20px;
+          }
+         
+        }
+      }
+  }
+}
+
+
+// typography
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+//map for tablet
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .home_block8{
+    margin-top:0;
+    margin-bottom: 100px;
+    .home_fix-block{
+      padding: 15px 5px!important;
+    }
+  }
+}
+// map for phone
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .home_block8{
+    margin-bottom: 40px;
+    .home_fix-block{
+      width: 100%!important;
+      border-radius: 0!important;
+      padding: 20px!important;
+    }
+  }
+}
+
+// footer for tablet 
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .footer{
+    margin-bottom: 0;
+    .footer-logo{
+      padding-right: 20px!important;
+      p{
+        font-size: 14px!important;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+//footer phone
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .footer{
+    margin-bottom: 0;
+    .footer-img-wrapper{
+      display: none;
+    }
+    .footer-logo{
+      padding-right:0!important;
+      margin-bottom: 20px;
+      p{
+      display: none;
+      }
+    }
+    .footer-bottom{
+      padding-top: 20px;
+      display: block;
+      margin:0 auto;
+    }
+  }
+}
+.googlemap-wrap{
+  width: 100%;
+  height: 450px;
+}
+.googlemap{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
 }
 
 
