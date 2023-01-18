@@ -1,3 +1,5 @@
+// @use "/scss/responsive";
+
 //General styles
 *,
 *::after,
@@ -33,7 +35,12 @@ p {
   font-weight: 400;
   font-size: 20px;
 }
-
+.max-width {
+  max-width: 1920px !important;
+  width: 100%;
+  margin: 0 auto;
+  background-color: orange;
+}
 //Buttons
 // .btn-dark {
 //   background-color: #024547;
@@ -66,9 +73,6 @@ p {
   max-width: 1300px;
   margin: 0 auto;
 }
-.hero-img{
-  max-width: 960px;
-}
 
 .section-text {
   padding-top: 40px;
@@ -92,18 +96,22 @@ p {
   left: 0;
   right: 0;
   .logo-wrap {
+    position: absolute;
     padding: 0;
     padding-right: 47px;
   }
-  .col-sm-8 {
+  .col-12 {
     padding-left: 15px;
+    .navbar-nav{
+      margin:0 auto;
+    }
   }
   .navbar {
     padding: 0;
 
     .navbar-brand {
+      display: none;
       img {
-        display: none;
         .nav-link {
           color: #000;
           font-weight: 500;
@@ -142,6 +150,9 @@ p {
 }
 
 .section-top {
+  position: relative;
+  height: 100vh;
+  max-height: 1080px;
   .container {
     height: 100%;
     .row {
@@ -213,9 +224,13 @@ p {
 
 .top-section-bg {
   position: absolute;
+  height: 100vh !important;
+  max-height: 1080px;
   right: 0;
-  max-height: 850px;
-  padding: 0;
+  img {
+    height: 100%;
+    padding: 0;
+  }
 }
 
 //breadcrumbs style
@@ -806,68 +821,6 @@ p {
   }
 }
 
-
-@media (max-width: 576px) {
-  .container_nav {
-    .col-sm-4 {
-      display: none;
-    }
-    .col-sm-8 {
-      .navbar {
-        .show {
-          .nav-item {
-            .home-icon {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
-  .section-top {
-    .top-section-bg {
-      position: absolute;
-    }
-    .homepage {
-      padding-top: 70px;
-      .home_block1-left {
-        .page-title {
-          line-height: 1.5;
-          font-size: 34px;
-        }
-      }
-      .col-sm-6 {
-      }
-    }
-  }
-  .section-container {
-    .col-sm-5 {
-    }
-    .col-sm-7 {
-      .section-title {
-        font-size: 34px;
-        line-height: 1.3;
-        margin-top: 30px;
-        br {
-          display: none;
-        }
-      }
-    }
-  }
-  .container-dark-bg {
-    .section-text {
-      padding-left: 20px;
-      .section-title {
-        font-size: 34px;
-        line-height: 1.3;
-      }
-    }
-    .section-img {
-      padding-bottom: 45px;
-    }
-  }
-}
-
 .section-features {
   .section-title {
   }
@@ -910,6 +863,41 @@ p {
     .section-parag {
       margin-left: 10px;
       margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width:992px) {
+  .container_nav {
+    padding-top: 16px;
+    .row {
+      padding-right: 16px;
+      padding-left: 16px;
+      display: flex;
+      justify-content: space-between;
+      .logo-wrap {
+        display: none;
+      }
+      .navbar-brand {
+        display: block!important;
+        width: 100px;
+        height: 60px;
+        img{
+          height: 100%;
+        }
+      }
+      button {
+        margin-left: auto;
+      }
+      .navbar-collapse {
+        background-color: #d8d8d8;
+        opacity: 0.8;
+
+        .home-icon {
+          width: 30px;  
+          height: 30px;
+        }
+      }
     }
   }
 }
