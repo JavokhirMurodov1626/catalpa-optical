@@ -310,10 +310,7 @@ p {
   }
 }
 
-.container-img-bg {
-  background-image: url("../img/foto_home7.png");
-  background-repeat: no-repeat;
-}
+
 
 .section-container {
   margin-top: 80px;
@@ -489,6 +486,17 @@ p {
   }
 }
 .call-to-action-section {
+  position: relative;
+  .section-bg-img{
+    padding: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    img{
+      height: 100%;
+    }
+  }
   padding: 88px 90px;
   margin-bottom: 145px;
   .section-title {
@@ -1157,7 +1165,6 @@ p {
 // why choose us section for tablet and phone
 @media screen and (min-width: 320px) and (max-width: 1024px){
   .section-features{
-    background-color: aquamarine;
     margin: 0;
     margin-bottom: 40px;
     .row{
@@ -1183,6 +1190,17 @@ p {
   }
 }
 
+
+// call to action section
+
+@media screen and (min-width: 320px) and (max-width: 1024px){
+  .call-to-action-section{
+    background-color: aquamarine;
+      .section-wrapper{
+        
+      }
+  }
+}
 
 
 
