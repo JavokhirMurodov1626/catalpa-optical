@@ -105,17 +105,16 @@ p {
 
     .navbar-brand {
       display: none;
-      img {
-        .nav-link {
-          color: #000;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 19px;
-          &.home-icon {
-            padding-top: 0;
-          }
-        }
-      }
+    }
+    .nav-item{
+    display: flex;
+    align-items: center;
+    }
+    .nav-link {
+      color: #000!important;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
     }
   }
 }

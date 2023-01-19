@@ -91,14 +91,15 @@ p {
 .container_nav .navbar .navbar-brand {
   display: none;
 }
-.container_nav .navbar .navbar-brand img .nav-link {
-  color: #000;
+.container_nav .navbar .nav-item {
+  display: flex;
+  align-items: center;
+}
+.container_nav .navbar .nav-link {
+  color: #000 !important;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-}
-.container_nav .navbar .navbar-brand img .nav-link.home-icon {
-  padding-top: 0;
 }
 
 .container_nav .navbar .nav-item {
