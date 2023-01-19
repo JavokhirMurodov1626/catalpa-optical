@@ -796,6 +796,7 @@ p {
   }
   .reviews {
     display: grid;
+    margin-bottom: 140px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     .review-box {
