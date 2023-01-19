@@ -1322,7 +1322,6 @@ p {
   }
 }
 //footer phone
-
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .footer {
     margin-bottom: 0;
@@ -1340,6 +1339,9 @@ p {
       padding-top: 20px;
       display: block;
       margin: 0 auto;
+    }
+    .footer-rm{
+      width: 50%; 
     }
   }
 }

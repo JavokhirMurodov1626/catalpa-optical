@@ -1194,6 +1194,9 @@ p {
     display: block;
     margin: 0 auto;
   }
+  .footer .footer-rm {
+    width: 50%;
+  }
 }
 .googlemap-wrap {
   width: 100%;
