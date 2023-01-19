@@ -741,6 +741,12 @@ p {
 }
 
 .section-img-right {
+  .text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
   .section-parag {
     font-family: "Roboto";
     font-style: normal;
@@ -761,6 +767,12 @@ p {
     font-size: 25px;
     line-height: 40px;
   }
+}
+.action-section.adult-page{
+  .section-text{
+    padding: 0;
+  }
+  margin-top: 80px;
 }
 .section-text.adult-page {
   h2 {
@@ -1482,5 +1494,29 @@ p {
       padding: 10px 20px;
       font-size: 16px;
     }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1024px){
+  .section-buttons {
+   margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px){
+  .action-section{
+    margin-top: 0!important;
+    .section-text{
+      padding: 40px!important;
+      .section-title{
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+  .action-section.adult-page{
+  
+    margin-bottom: 100px;
   }
 }
