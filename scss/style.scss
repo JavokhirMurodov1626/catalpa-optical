@@ -1586,3 +1586,17 @@ p {
     }
   }
 }
+@media screen and (max-width:1910px) {
+  .footer{
+    .footer-img-wrapper {
+      max-width: 35%!important; 
+    }
+  }
+}
+@media screen and (max-width:1440px){
+  .footer{
+    .footer-img-wrapper {
+      max-width: 30%!important; 
+    }
+  }
+}
