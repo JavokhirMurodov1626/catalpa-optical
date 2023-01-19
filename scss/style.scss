@@ -1541,4 +1541,23 @@ p {
 
 // Contanct responsive for phone and tablet
 
-
+@media screen and (min-width: 320px) and (max-width: 1024px){
+  .container-contact{
+    margin-top: 40px;
+    h2{
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+    .contact-box {
+      margin-bottom: 20px;
+    }
+    .googlemap-wrap{
+      height: 450px;
+      border-radius: 0;
+      iframe{
+        border-radius:0;
+      }
+    }
+  }
+}

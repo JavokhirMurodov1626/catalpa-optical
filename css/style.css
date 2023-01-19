@@ -1364,4 +1364,24 @@ p {
   .section-testimonials .reviews .review-box {
     padding: 20px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .container-contact {
+    margin-top: 40px;
+  }
+  .container-contact h2 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  .container-contact .contact-box {
+    margin-bottom: 20px;
+  }
+  .container-contact .googlemap-wrap {
+    height: 450px;
+    border-radius: 0;
+  }
+  .container-contact .googlemap-wrap iframe {
+    border-radius: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
