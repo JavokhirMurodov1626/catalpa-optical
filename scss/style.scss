@@ -25,7 +25,6 @@ a {
 li {
   list-style: none;
 }
-
 body {
   position: relative;
 }
@@ -1046,6 +1045,8 @@ p {
 //reverse sections tablet and phone
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
+
+
   .section-img-left {
     margin: 40px 0;
     .section-side-img {
@@ -1421,6 +1422,65 @@ p {
   .section-middle-reverse{
     .row{
       flex-direction: column-reverse;
+    }
+  }
+}
+
+// Adult page responsive 
+
+@media screen and (min-width: 320px) and (max-width: 1024px){
+  .section-adult1{
+    margin: 0;
+    margin-bottom: 40px;
+    .section-title{
+      font-size: 35px;
+    line-height: 45px
+    }
+    .section-text{
+      padding: 20px 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .section-img-right{
+    margin: 0;
+    margin-bottom: 40px;
+    .text-content{
+      padding-top: 40px;
+      padding-left:40px;
+    }
+    .section-title{
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+    .section-buttons{
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .section-img{
+      img{
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .section-img-right{
+    .row{
+      flex-direction: column-reverse;
+    }
+  }
+}
+// responsive buttons for phone
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .section-buttons {
+    button {
+      margin-right: 0;
+      padding: 10px 20px;
+      font-size: 16px;
     }
   }
 }
