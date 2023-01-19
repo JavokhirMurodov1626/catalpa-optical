@@ -162,6 +162,18 @@ p {
       justify-content: space-between;
     }
   }
+  .homepage.hero-content{
+    .wrap{
+      height: 100vh;
+      max-height: 1080px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  
+  
   .section-top-description {
     margin-bottom: 24px;
     line-height: 39px;
@@ -227,6 +239,7 @@ p {
 .top-section-bg {
   position: absolute;
   height: 100vh !important;
+  width: 50%;
   max-height: 1080px;
   right: 0;
   z-index: -11;
@@ -658,26 +671,17 @@ p {
 }
 
 // about.html
-.section-top.about {
-  height: 610px;
-}
-.section-about {
-  .col {
-    padding: 90px;
-  }
-  .section-title {
-    margin-top: 0;
-    margin-bottom: 26px;
-  }
-  .section-about-lng {
+.section-about{
+  .section-about-lng{
     display: flex;
     gap: 26px;
-    .section-about-lng-item {
-    }
   }
 }
 
 .section-middle {
+  img{
+    height: 100%;
+  }
   h2 {
     margin-bottom: 50px;
     margin-top: 0;
@@ -1344,5 +1348,79 @@ p {
   border-radius: 50px;
 }
 
+/// About page responsive 
+@media screen and (min-width: 320px) and (max-width: 1024px){
+  .homepage.hero-content{
+    .wrap{
+      height:max-content!important;
+      margin-bottom: 100px;
+    }
+
+  }
+  .breadcrumb{
+    padding-left: 20px;
+  }
+
+  .section-about{
+    margin-top: 0;
+    margin-bottom: 40px;
+    .section-text{
+      padding:40px 60px;
+    }
+    .section-title{
+      font-size: 35px;
+      line-height: 45px;
+    }
+    .section-about-lng{
+      display: flex;
+      gap: 26px;
+    }
+    .section-parag{
+      margin: 0;
+      margin-top: 10px;
+    }
+  }
+
+  .section-middle{
+    margin: 0;
+    margin-bottom: 40px;
+    .section-title{
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 20px;
+
+    }
+    .section-parag-wrap{
+      padding: 20px!important;
+    }
+  }
+  .about-swiper {
+    margin: 0;
+    margin-bottom: 40px;
+    .swiper {
+      padding-bottom: 60px;
+    }
+    h2 {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+  }
+  .about-map {
+    margin-top: 145px;
+  }
 
 
+}
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .section-about{
+    .section-text{
+      padding: 20px 36px;
+    }
+  }
+  .section-middle-reverse{
+    .row{
+      flex-direction: column-reverse;
+    }
+  }
+}

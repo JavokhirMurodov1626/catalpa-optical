@@ -135,6 +135,13 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
+.section-top .homepage.hero-content .wrap {
+  height: 100vh;
+  max-height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .section-top .section-top-description {
   margin-bottom: 24px;
   line-height: 39px;
@@ -194,6 +201,7 @@ p {
 .top-section-bg {
   position: absolute;
   height: 100vh !important;
+  width: 50%;
   max-height: 1080px;
   right: 0;
   z-index: -11;
@@ -598,20 +606,13 @@ p {
   line-height: 19px;
 }
 
-.section-top.about {
-  height: 610px;
-}
-
-.section-about .col {
-  padding: 90px;
-}
-.section-about .section-title {
-  margin-top: 0;
-  margin-bottom: 26px;
-}
 .section-about .section-about-lng {
   display: flex;
   gap: 26px;
+}
+
+.section-middle img {
+  height: 100%;
 }
 .section-middle h2 {
   margin-bottom: 50px;
@@ -1181,4 +1182,70 @@ p {
   width: 100%;
   height: 100%;
   border-radius: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .homepage.hero-content .wrap {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    margin-bottom: 100px;
+  }
+  .breadcrumb {
+    padding-left: 20px;
+  }
+  .section-about {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .section-about .section-text {
+    padding: 40px 60px;
+  }
+  .section-about .section-title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .section-about .section-about-lng {
+    display: flex;
+    gap: 26px;
+  }
+  .section-about .section-parag {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .section-middle {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .section-middle .section-title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  .section-middle .section-parag-wrap {
+    padding: 20px !important;
+  }
+  .about-swiper {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .about-swiper .swiper {
+    padding-bottom: 60px;
+  }
+  .about-swiper h2 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  .about-map {
+    margin-top: 145px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .section-about .section-text {
+    padding: 20px 36px;
+  }
+  .section-middle-reverse .row {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */
