@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-img {
+img, picture {
   display: block;
   width: 100%;
   -o-object-fit: cover;
@@ -209,7 +209,15 @@ p {
 }
 .top-section-bg img {
   height: 100%;
-  padding: 0;
+}
+.top-section-bg picture {
+  height: 100%;
+}
+.top-section-bg picture source {
+  height: 100%;
+}
+.top-section-bg picture img {
+  height: 100%;
 }
 
 .breadcrumb {
@@ -503,6 +511,7 @@ p {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.35px;
+  color: #024547;
 }
 .home_block8 .home_block8-contact .home_fix-block .col-sm-3 h6 {
   font-weight: 500;

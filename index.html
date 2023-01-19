@@ -71,7 +71,18 @@
   <div class="container-fluid section-top">
 
     <div class="hero-img-wrap top-section-bg bottom-left-rounded-img ">
-      <img src="img/close-up-portrait-joyful-laughing-young-lady-trendy-bracelets-posing-with-hand-up-near-open-air-blue-swimming-pool 1.png" alt="" class="img-fluid bottom-left-rounded-img">
+      <picture>
+        <source
+          media="(max-width: 600px)"
+          srcset="img/homepage-hero-phone.png"
+        >
+        <source
+          media="(max-width: 1024px)"
+          srcset="img/homepage-hero-desktop.png"
+        >
+        <img class="bottom-left-rounded-img" src="img/homepage-hero-desktop.png ">
+      </picture>
+      
     </div>
 
     <div class="container homepage">
@@ -311,7 +322,7 @@
             <div class="col-sm-3">
               <img src="icons/icon-phone.png" alt="" class="home_block8-icon1">
               <div class="home_block8-phone">
-                <p class="home_block8-p">Phone</p>
+                <p class=" contact-title home_block8-p">Phone</p>
                 <h6 class="home_block8-h1">(718) 366-3871</h6>
               </div>
             </div>
@@ -319,7 +330,7 @@
             <div class="col-sm-3">
               <img src="icons/icon-fax.png" alt="" class="home_block8-icon1">
               <div class="home_block8-phone">
-                <p class="home_block8-p">Fax</p>
+                <p class="home_block8-p contact-title">Fax</p>
                 <h6 class="home_block8-h2">(718) 366-3905</h6>
               </div>
             </div>
@@ -327,7 +338,7 @@
             <div class="col-sm-3">
               <img src="icons/icon-map.png" alt="" class="home_block8-icon1">
               <div class="home_block8-phone">
-                <p class="home_block8-p">Adress</p>
+                <p class="home_block8-p contact-title">Adress</p>
                 <h6 class="home_block8-h3">857 Seneca Ave Ridgewood</h6>
               </div>
             </div>

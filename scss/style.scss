@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-img {
+img, picture {
   display: block;
   width: 100%;
   object-fit: cover;
@@ -239,9 +239,17 @@ p {
   max-height: 1080px;
   right: 0;
   z-index: -11;
-  img {
+  img{
     height: 100%;
-    padding: 0;
+  }
+  picture {
+    height: 100%;
+    source{
+      height: 100%;
+    }
+    img{
+      height: 100%;
+    }
   }
 }
 
@@ -552,6 +560,7 @@ p {
           font-size: 16px;
           line-height: 20px;
           letter-spacing: 0.35px;
+          color:#024547;
         }
         h6 {
           font-weight: 500;
