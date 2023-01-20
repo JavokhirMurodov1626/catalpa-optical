@@ -1,4 +1,17 @@
 // @use "/scss/responsive";
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url('/fonts/roboto-regular-webfont.woff') format("woff"),
+   local("Roboto"), url('/fonts/roboto-regular-webfont.woff2') format("woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-SemiBold.woff') format('woff'),
+  url('/fonts/Rubik-SemiBold.woff2') format('woff2');
+  font-style: normal;
+}
 
 //General styles
 *,
@@ -34,6 +47,7 @@ p {
   font-weight: 400;
   font-size: 20px;
 }
+
 
 //Buttons
 // .btn-dark {
